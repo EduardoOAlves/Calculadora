@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="content">
+        
+     <form name="tela">
+        <p><h4>Calculadora v.01</h4></p>
+        <input class="textbox" name="screen" type="text" maxlength="9" Placeholder="0" id="text_box" /><br><br>
+        
+        <div class="keyboard">
+            <input onclick="escrever(this.value)" class="key key_1" type="button" value="1" id="key_1">
+            <input onclick="escrever(this.value)" class="key key_2" type="button" value="2" id="key_2">
+            <input onclick="escrever(this.value)" class="key key_3" type="button" value="3" id="key_3">
+            <input onclick="escrever(this.value)" class="key key_4" type="button" value="4" id="key_4">
+            <input onclick="escrever(this.value)" class="key key_5" type="button" value="5" id="key_5">
+            <input onclick="escrever(this.value)" class="key key_6" type="button" value="6" id="key_6">
+            <input onclick="escrever(this.value)" class="key key_7" type="button" value="7" id="key_7">
+            <input onclick="escrever(this.value)" class="key key_8" type="button" value="8" id="key_8">
+            <input onclick="escrever(this.value)" class="key key_9" type="button" value="9" id="key_9">
+            <input onclick="escrever(this.value)" class="key key_0" type="button" value="0" id="key_0">
+            <input onclick="salvavalor(this.value)" class="key key_ded"  type="button" value="-" id="key_ded">
+            <input onclick="salvavalor(this.value)" class="key key_add"  type="button" value="+" id="key_add">
+            <input onclick="salvavalor(this.value)" class="key key_divd" type="button" value="/" id="key_divd">
+            <input onclick="salvavalor(this.value)" class="key key_mult" type="button" value="*" id="key_mult">
+            <input type="button" value="AC" onClick="primeiro=0;window.document.tela.screen.value='';" class="key">
+            <input onclick="salvavalor(this.value)" class="key key_equl" type="button" value="=" id="key_equl">
+        </div>
+ </form>
+    </div>
+    <script src="script.js"></script>
+</body>     
+</html>
